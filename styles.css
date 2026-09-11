@@ -82,8 +82,8 @@ body{
 .stat-source{font-size:13px;color:#aab5ab}
 .stat-highlight{background:var(--hero-start);border-radius:10px;padding:12px;margin:10px 0;color:var(--text);box-shadow:0 6px 14px rgba(15,23,20,0.03);font-size:14px}
 .stat-highlight{display:flex;align-items:center;gap:12px}
-.stat-highlight-icon{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:0;background:transparent;flex:0 0 20px;margin-right:8px}
-.stat-highlight-icon img{width:12px;height:12px;object-fit:contain;border-radius:0;display:block}
+.stat-highlight-icon{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:0;background:transparent;flex:0 0 24px;margin-right:10px}
+.stat-highlight-icon img{width:16px;height:16px;object-fit:contain;border-radius:0;display:block}
 .stat-highlight-text{display:block}
 .stats-note{font-style:italic;margin-top:20px;color:var(--muted)}
 
@@ -91,10 +91,10 @@ body{
 	.stat-cards{grid-template-columns:1fr}
 	.stats-title{font-size:22px}
 
-	/* Garantir ícone pequeno e espaçamento adequado em mobile */
+	/* Ajuste responsivo do ícone para mobile */
 	.stat-highlight{align-items:center}
-	.stat-highlight-icon{width:18px;height:18px;flex:0 0 18px;margin-right:8px}
-	.stat-highlight-icon img{width:12px;height:12px}
+	.stat-highlight-icon{width:20px;height:20px;flex:0 0 20px;margin-right:8px}
+	.stat-highlight-icon img{width:14px;height:14px}
 }
 
 .steps h2{margin:0 0 18px}
