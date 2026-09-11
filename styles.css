@@ -84,7 +84,7 @@ body{
 .stat-highlight{display:flex;align-items:center;gap:12px}
 .stat-highlight-icon{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:rgba(47,79,58,0.06);flex:0 0 48px;margin-right:12px;padding:6px}
 .stat-highlight-icon img{width:36px;height:36px;object-fit:contain;border-radius:0;display:block}
-.stat-highlight-text{display:block}
+.stat-highlight-text{display:block;color:var(--accent-2);font-weight:600}
 .stats-note{font-style:italic;margin-top:20px;color:var(--muted)}
 
 @media (max-width:900px){
