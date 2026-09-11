@@ -90,6 +90,11 @@ body{
 @media (max-width:900px){
 	.stat-cards{grid-template-columns:1fr}
 	.stats-title{font-size:22px}
+
+	/* Garantir ícone pequeno e espaçamento adequado em mobile */
+	.stat-highlight{align-items:center}
+	.stat-highlight-icon{width:18px;height:18px;flex:0 0 18px;margin-right:8px}
+	.stat-highlight-icon img{width:12px;height:12px}
 }
 
 .steps h2{margin:0 0 18px}
