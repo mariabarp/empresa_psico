@@ -58,7 +58,7 @@ body{
 .note{position:absolute;right:24px;background:rgba(255,255,255,0.95);backdrop-filter:blur(6px);padding:12px 16px;border-radius:12px;box-shadow:0 10px 30px rgba(15,23,20,0.08);width:220px}
 .note strong{display:block;color:var(--accent-2);margin-bottom:6px}
 .note .small{font-size:13px;color:var(--muted)}
-.note-1{top:36%;}
+.note-1{top:18%;}
 .note-2{bottom:16%;}
 
 /* Update placeholder illustration colors to match palette */
