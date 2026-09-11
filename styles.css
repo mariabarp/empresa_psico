@@ -82,8 +82,8 @@ body{
 .stat-source{font-size:13px;color:#aab5ab}
 .stat-highlight{background:var(--hero-start);border-radius:10px;padding:12px;margin:10px 0;color:var(--text);box-shadow:0 6px 14px rgba(15,23,20,0.03);font-size:14px}
 .stat-highlight{display:flex;align-items:center;gap:12px}
-.stat-highlight-icon{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:0;background:transparent;flex:0 0 28px;margin-right:10px}
-.stat-highlight-icon img{width:22px;height:22px;object-fit:contain;border-radius:0;display:block}
+.stat-highlight-icon{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:0;background:transparent;flex:0 0 36px;margin-right:12px}
+.stat-highlight-icon img{width:30px;height:30px;object-fit:contain;border-radius:0;display:block}
 .stat-highlight-text{display:block}
 .stats-note{font-style:italic;margin-top:20px;color:var(--muted)}
 
@@ -93,8 +93,8 @@ body{
 
 	/* Ajuste responsivo do ícone para mobile */
 	.stat-highlight{align-items:center}
-	.stat-highlight-icon{width:24px;height:24px;flex:0 0 24px;margin-right:8px}
-	.stat-highlight-icon img{width:18px;height:18px}
+	.stat-highlight-icon{width:32px;height:32px;flex:0 0 32px;margin-right:8px}
+	.stat-highlight-icon img{width:26px;height:26px}
 }
 
 .steps h2{margin:0 0 18px}
