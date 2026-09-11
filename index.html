@@ -3,14 +3,88 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Landing — Hello World</title>
+  <title>Starbem-like — Psicologia para Empresas</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Atendimento psicológico corporativo para empresas e colaboradores." />
 </head>
 <body>
-  <main class="container">
-    <h1>Hello World</h1>
-    <p>Bem-vindo(a) à minha landing page simples.</p>
-    <a class="btn" href="#">Call to action</a>
-  </main>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="#">StarBem — estilo</a>
+      <nav class="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a class="cta" href="#contato">Quero Atendimento</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-content">
+        <h1>Psicologia para empresas e colaboradores</h1>
+        <p class="lead">Apoio emocional, programas de bem-estar e atendimento para equipes — online ou presencial.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contato">Falar com um especialista</a>
+          <a class="btn ghost" href="#servicos">Nossos serviços</a>
+        </div>
+        <ul class="trust">
+          <li>Atendimento remoto</li>
+          <li>Confidencialidade</li>
+          <li>Relatórios para RH</li>
+        </ul>
+      </div>
+      <div class="hero-card">
+        <form id="contact" class="contact-card">
+          <h3>Solicitar contato</h3>
+          <label><input type="text" name="nome" placeholder="Seu nome" required></label>
+          <label><input type="email" name="email" placeholder="Seu e-mail" required></label>
+          <label><input type="tel" name="tel" placeholder="Telefone (opcional)"></label>
+          <button class="btn primary" type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="section features">
+    <div class="wrap">
+      <h2>O que oferecemos</h2>
+      <div class="cards">
+        <article class="card">
+          <h4>Atendimento Individual</h4>
+          <p>Consultas para colaboradores com profissionais qualificados.</p>
+        </article>
+        <article class="card">
+          <h4>Programas Corporativos</h4>
+          <p>Projetos de bem-estar, workshops e treinamento para gestores.</p>
+        </article>
+        <article class="card">
+          <h4>Suporte para RH</h4>
+          <p>Relatórios e indicadores para apoiar decisões estratégicas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <strong>StarBem — estilo</strong>
+        <p>Psicologia empresarial e bem-estar no trabalho.</p>
+      </div>
+      <nav>
+        <a href="#">Termos</a>
+        <a href="#">Privacidade</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contact')?.addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Obrigado! Entraremos em contato.');
+      this.reset();
+    });
+  </script>
 </body>
 </html>
