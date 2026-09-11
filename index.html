@@ -9,72 +9,98 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap">
-      <a class="logo" href="#">StarBem — estilo</a>
+    <div class="wrap header-grid">
+      <a class="logo" href="#">Zenklub-style</a>
       <nav class="nav">
         <a href="#servicos">Serviços</a>
-        <a href="#sobre">Sobre</a>
-        <a class="cta" href="#contato">Quero Atendimento</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a class="cta" href="#contato">Quero atendimento</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-content">
-        <h1>Psicologia para empresas e colaboradores</h1>
-        <p class="lead">Apoio emocional, programas de bem-estar e atendimento para equipes — online ou presencial.</p>
+  <section class="hero hero-zen">
+    <div class="wrap hero-inner">
+      <div class="hero-left">
+        <h1>Programas de saúde mental para empresas</h1>
+        <p class="lead">Apoio contínuo para colaboradores, prevenção e acompanhamento clínico com profissionais especializados.</p>
         <div class="hero-actions">
-          <a class="btn primary" href="#contato">Falar com um especialista</a>
-          <a class="btn ghost" href="#servicos">Nossos serviços</a>
+          <a class="btn primary" href="#contato">Solicitar demonstração</a>
+          <a class="btn ghost" href="#servicos">Ver soluções</a>
         </div>
-        <ul class="trust">
-          <li>Atendimento remoto</li>
-          <li>Confidencialidade</li>
-          <li>Relatórios para RH</li>
-        </ul>
+        <div class="stats">
+          <div><strong>+500</strong><span>Empresas</span></div>
+          <div><strong>+30k</strong><span>Colaboradores atendidos</span></div>
+        </div>
       </div>
-      <div class="hero-card">
-        <form id="contact" class="contact-card">
-          <h3>Solicitar contato</h3>
-          <label><input type="text" name="nome" placeholder="Seu nome" required></label>
-          <label><input type="email" name="email" placeholder="Seu e-mail" required></label>
-          <label><input type="tel" name="tel" placeholder="Telefone (opcional)"></label>
-          <button class="btn primary" type="submit">Enviar</button>
-        </form>
+      <div class="hero-right">
+        <!-- Placeholder illustration -->
+        <div class="illustration">
+          <svg width="360" height="240" viewBox="0 0 360 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="360" height="240" rx="16" fill="#EAF2FF"/>
+            <circle cx="80" cy="80" r="36" fill="#fff" stroke="#DDEEFF"/>
+            <rect x="140" y="40" width="180" height="20" rx="8" fill="#fff"/>
+            <rect x="140" y="72" width="120" height="16" rx="8" fill="#fff"/>
+          </svg>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="servicos" class="section features">
+  <section id="servicos" class="section solutions">
     <div class="wrap">
-      <h2>O que oferecemos</h2>
-      <div class="cards">
-        <article class="card">
-          <h4>Atendimento Individual</h4>
-          <p>Consultas para colaboradores com profissionais qualificados.</p>
+      <h2>Para empresas</h2>
+      <div class="solution-cards">
+        <article class="solution">
+          <h4>Programa de Acolhimento</h4>
+          <p>Atendimento rápido e confidencial para colaboradores em situação de crise.</p>
         </article>
-        <article class="card">
-          <h4>Programas Corporativos</h4>
-          <p>Projetos de bem-estar, workshops e treinamento para gestores.</p>
+        <article class="solution">
+          <h4>Plataforma de Escuta</h4>
+          <p>Agendamento, acompanhamento e relatórios para RH.</p>
         </article>
-        <article class="card">
-          <h4>Suporte para RH</h4>
-          <p>Relatórios e indicadores para apoiar decisões estratégicas.</p>
+        <article class="solution">
+          <h4>Workshops e Palestras</h4>
+          <p>Capacitação de lideranças e ações de prevenção.</p>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="section steps">
+    <div class="wrap">
+      <h2>Como funciona</h2>
+      <ol class="steps-list">
+        <li>Mapeamento da necessidade</li>
+        <li>Plano e onboarding</li>
+        <li>Implementação e acompanhamento</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contato" class="section contact-cta">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Fale com nossos especialistas</h2>
+        <p>Agende uma demonstração personalizada para sua empresa.</p>
+      </div>
+      <form id="contact" class="contact-inline" aria-label="Formulário de contato">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <button class="btn primary" type="submit">Solicitar contato</button>
+      </form>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <strong>StarBem — estilo</strong>
-        <p>Psicologia empresarial e bem-estar no trabalho.</p>
+        <strong>Zenklub-style</strong>
+        <p>Programa de saúde mental para organizações.</p>
       </div>
       <nav>
-        <a href="#">Termos</a>
         <a href="#">Privacidade</a>
+        <a href="#">Contato</a>
       </nav>
     </div>
   </footer>

@@ -25,34 +25,47 @@ body{
 .nav .cta{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
 
 .hero{padding:48px 0}
-.hero-grid{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center}
-.hero-content h1{font-size:34px;margin:0 0 12px}
+.hero{padding:28px 0}
+.hero-zen{background:linear-gradient(135deg,#e8f2ff 0%, #f7fbff 100%);border-bottom:1px solid #e6eef8}
+.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0}
+.hero-left h1{font-size:36px;margin:0 0 12px}
 .lead{color:var(--muted);margin-bottom:18px}
 .hero-actions .btn{margin-right:12px}
+.stats{display:flex;gap:18px;margin-top:18px;color:var(--muted)}
+.stats strong{display:block;color:var(--text);font-size:18px}
 .btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none}
 .btn.primary{background:var(--accent);color:#fff}
 .btn.ghost{background:transparent;border:1px solid rgba(37,99,235,0.12);color:var(--accent)}
 
 .trust{list-style:none;padding:0;margin:16px 0 0;display:flex;gap:12px;color:var(--muted)}
 
-.hero-card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 8px 20px rgba(15,23,42,0.06)}
-.contact-card h3{margin:0 0 12px}
-.contact-card label{display:block;margin-bottom:8px}
-.contact-card input{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef8}
-.contact-card button{width:100%;padding:10px;border-radius:8px;border:0}
+.illustration{display:flex;align-items:center;justify-content:center}
 
-.section{padding:40px 0}
-.features h2{margin:0 0 18px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
-.card h4{margin:0 0 8px}
-.card p{color:var(--muted);margin:0}
+.solutions{padding:48px 0}
+.solution-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.solution{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04)}
+.solution h4{margin:0 0 8px}
+.solution p{color:var(--muted);margin:0}
+
+.section{padding:36px 0}
+
+.steps h2{margin:0 0 18px}
+.steps-list{display:flex;gap:18px;list-style:none;padding:0;margin:0;color:var(--muted)}
+.steps-list li{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.03)}
+
+.contact-cta{background:white;padding:28px 0;border-top:1px solid #eef4ff}
+.contact-grid{display:flex;gap:18px;align-items:center}
+.contact-inline{display:flex;gap:8px}
+.contact-inline input{padding:10px;border-radius:8px;border:1px solid #e6eef8}
+.contact-inline button{padding:10px 14px;border-radius:8px}
 
 .site-footer{border-top:1px solid #e6eef8;padding:22px 0}
 .footer-grid{display:flex;justify-content:space-between;align-items:center}
 .site-footer a{color:var(--muted);text-decoration:none;margin-left:12px}
 
-@media (max-width:900px){
-	.hero-grid{grid-template-columns:1fr}
-	.cards{grid-template-columns:1fr}
+@media (max-width:1000px){
+	.hero-inner{grid-template-columns:1fr}
+	.solution-cards{grid-template-columns:1fr}
+	.contact-grid{flex-direction:column}
+	.contact-inline{flex-direction:column}
 }
