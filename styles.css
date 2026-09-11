@@ -80,6 +80,7 @@ body{
 .stat-caption{color:var(--muted);margin-bottom:12px}
 .stat-text{color:#334047;margin-bottom:12px}
 .stat-source{font-size:13px;color:#aab5ab}
+.stat-highlight{background:#FBF3E6;border-radius:10px;padding:12px;margin:10px 0;color:var(--text);box-shadow:0 6px 14px rgba(15,23,20,0.03);font-size:14px}
 .stats-note{font-style:italic;margin-top:20px;color:var(--muted)}
 
 @media (max-width:900px){
