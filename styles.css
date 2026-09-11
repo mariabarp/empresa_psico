@@ -80,7 +80,7 @@ body{
 .stat-caption{color:var(--muted);margin-bottom:12px}
 .stat-text{color:#334047;margin-bottom:12px}
 .stat-source{font-size:13px;color:#aab5ab}
-.stat-highlight{background:var(--hero-start);border-radius:10px;padding:12px;margin:10px 0;color:var(--text);box-shadow:0 6px 14px rgba(15,23,20,0.03);font-size:14px}
+.stat-highlight{background:rgba(47,79,58,0.08);border-radius:10px;padding:12px;margin:10px 0;color:var(--text);box-shadow:0 6px 14px rgba(15,23,20,0.03);font-size:14px}
 .stat-highlight{display:flex;align-items:center;gap:12px}
 .stat-highlight-icon{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:rgba(47,79,58,0.06);flex:0 0 48px;margin-right:12px;padding:6px}
 .stat-highlight-icon img{width:36px;height:36px;object-fit:contain;border-radius:0;display:block}
