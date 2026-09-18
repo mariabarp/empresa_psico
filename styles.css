@@ -129,7 +129,7 @@ body{
 
 /* Como funciona na prática */
 
-.how-practice{padding:48px 0;background:linear-gradient(180deg,#DFF3E8,#C7EBD1);color:var(--accent-2)}
+.how-practice{padding:48px 0;background-color:#D9F0C3;color:var(--accent-2)}
 .how-grid{display:grid;grid-template-columns:1fr 720px;gap:24px;align-items:start}
 .how-left{background:transparent;padding:28px 18px}
 .how-left .badge{background:rgba(47,79,58,0.08);color:var(--accent-2)}
