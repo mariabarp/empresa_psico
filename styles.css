@@ -128,18 +128,29 @@ body{
 .steps-list li{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.03)}
 
 /* Como funciona na prática */
-.how-practice{padding:48px 0;background:transparent}
-.how-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
-.how-card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.04);display:flex;gap:14px;align-items:flex-start}
-.how-number{width:44px;height:44px;border-radius:50%;background:var(--accent-2);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 44px}
-.how-body h4{margin:0 0 6px;color:var(--accent-2)}
-.how-body p{margin:0;color:var(--muted);font-size:14px}
-.how-note{margin-top:20px;background:rgba(47,79,58,0.06);padding:16px;border-radius:10px;display:flex;gap:12px;align-items:flex-start}
-.how-note-icon{width:36px;height:36px;border-radius:50%;background:var(--hero-start);display:flex;align-items:center;justify-content:center;flex:0 0 36px}
-.how-note p{margin:0;color:var(--accent-2)}
+
+.how-practice{padding:48px 0;background:linear-gradient(180deg,#DFF3E8,#C7EBD1);color:var(--accent-2)}
+.how-grid{display:grid;grid-template-columns:1fr 720px;gap:24px;align-items:start}
+.how-left{background:transparent;padding:28px 18px}
+.how-left .badge{background:rgba(47,79,58,0.08);color:var(--accent-2)}
+.how-hero{font-size:36px;margin:6px 0 12px;color:var(--accent-2)}
+.how-lead{color:var(--muted);max-width:520px}
+.how-left-actions{margin-top:18px}
+.how-left .btn.primary{background:var(--accent-2);color:#fff;border-radius:12px;padding:12px 18px;border:none}
+.how-left .btn.primary:hover{background:#24422f}
+.how-right{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.how-card{padding:28px;border-radius:12px;color:#fff;min-height:220px;box-shadow:0 8px 22px rgba(0,0,0,0.12);background:linear-gradient(180deg,#3b6e54,#2f5a42)}
+.how-card:nth-child(2){background:linear-gradient(180deg,#2f5a42,#25603a)}
+.how-card:nth-child(3){background:linear-gradient(180deg,#25603a,#1f4f33)}
+.how-card-number{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;margin-bottom:14px}
+.how-card h4{margin:0 0 8px;color:#fff}
+.how-card p{margin:0;color:rgba(255,255,255,0.92);line-height:1.6}
+.how-note{margin-top:18px;background:rgba(47,79,58,0.06);padding:16px;border-radius:10px;color:var(--accent-2);grid-column:2/3}
+.how-note p{margin:0;font-size:14px}
 
 @media (max-width:1000px){
-	.how-cards{grid-template-columns:1fr}
+	.how-grid{grid-template-columns:1fr}
+	.how-right{grid-template-columns:1fr;margin-top:16px}
 }
 
 .contact-cta{background:white;padding:28px 0;border-top:1px solid #eef4ff}
