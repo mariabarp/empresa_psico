@@ -11,6 +11,10 @@ p{margin:0 0 20px;color:#334155}
 	--hero-end: #FFF5F0; /* very light terracotta */
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 *{box-sizing:border-box}
 body{
 	margin:0;
@@ -172,8 +176,31 @@ body{
 .team-title{font-size:22px;margin:8px 0 20px;color:var(--accent-2)}
 .team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;align-items:start;justify-items:center}
 .team-member{text-align:center;max-width:360px}
-.avatar{width:220px;height:220px;border-radius:50%;overflow:hidden;margin:0 auto 14px;box-shadow:0 8px 24px rgba(15,23,20,0.06)}
+.avatar-wrap{position:relative;display:inline-block;margin:0 auto 14px}
+.avatar{width:220px;height:220px;border-radius:50%;overflow:hidden;margin:0 auto;box-shadow:0 8px 24px rgba(15,23,20,0.06)}
 .avatar img{width:100%;height:100%;object-fit:cover;object-position:50% 70%;display:block}
+.social-badge{
+	position:absolute;
+	bottom:6px;
+	right:8px;
+	width:42px;
+	height:42px;
+	border-radius:50%;
+	background:linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	color:#ffffff;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	box-shadow:0 4px 14px rgba(0,0,0,0.18);
+	border:3px solid #ffffff;
+	text-decoration:none;
+	transition:transform 0.25s ease, box-shadow 0.25s ease;
+}
+.social-badge:hover{
+	transform:scale(1.14);
+	box-shadow:0 6px 18px rgba(0,0,0,0.25);
+}
+.social-badge svg{width:20px;height:20px}
 .member-name{color:#83c24a;font-weight:700;margin:6px 0 6px;font-size:18px}
 .member-role{color:#6b66b5;margin:0 0 8px;font-size:14px;line-height:1.4}
 .member-reg{font-weight:700;color:#153e6b}
