@@ -232,3 +232,72 @@ body{
 	.contact-grid{flex-direction:column}
 	.contact-inline{flex-direction:column}
 }
+
+/* Botões Flutuantes (WhatsApp e E-mail) */
+.floating-contact-group{
+	position:fixed;
+	bottom:24px;
+	right:24px;
+	display:flex;
+	flex-direction:column;
+	gap:12px;
+	z-index:999;
+}
+
+.floating-btn{
+	width:54px;
+	height:54px;
+	border-radius:50%;
+	color:#ffffff;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	text-decoration:none;
+	transition:transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.floating-whatsapp{
+	background:#25D366;
+	box-shadow:0 6px 20px rgba(37,211,102,0.4);
+}
+
+.floating-whatsapp:hover{
+	transform:scale(1.12) translateY(-2px);
+	background:#20ba5a;
+	box-shadow:0 10px 24px rgba(37,211,102,0.5);
+}
+
+.floating-email{
+	background:var(--accent-2);
+	box-shadow:0 6px 20px rgba(47,79,58,0.35);
+}
+
+.floating-email:hover{
+	transform:scale(1.12) translateY(-2px);
+	background:#233d2c;
+	box-shadow:0 10px 24px rgba(47,79,58,0.45);
+}
+
+.floating-btn svg{
+	display:block;
+}
+
+@media (max-width:600px){
+	.floating-contact-group{
+		bottom:18px;
+		right:18px;
+		gap:10px;
+	}
+	.floating-btn{
+		width:48px;
+		height:48px;
+	}
+	.floating-whatsapp svg{
+		width:24px;
+		height:24px;
+	}
+	.floating-email svg{
+		width:22px;
+		height:22px;
+	}
+}
