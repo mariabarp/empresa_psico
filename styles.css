@@ -29,7 +29,7 @@ body{
 .site-header{background:#F7FCF5;padding:8px 0}
 .site-header .wrap{display:flex;align-items:center;justify-content:space-between}
 .logo{display:inline-flex;align-items:center;font-weight:700;color:var(--text);text-decoration:none}
-.logo img{height:65px;max-height:65px;width:auto;object-fit:contain;display:block}
+.logo img{height:78px;max-height:78px;width:auto;object-fit:contain;display:block}
 .footer-logo{height:32px;max-height:32px;max-width:110px;width:auto;object-fit:contain;display:block;margin-bottom:8px}
 .nav a{margin-left:18px;color:var(--muted);text-decoration:none}
 .nav .cta{background:var(--accent-2);color:white;padding:8px 12px;border-radius:8px;text-decoration:none}
