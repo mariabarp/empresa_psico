@@ -104,12 +104,30 @@ body{
 
 /* Seção SOBRE A EMPRESA */
 .sobre-section{padding:48px 0;background:linear-gradient(180deg, #F7FCF5 0%, #F3F6F0 100%)}
+.sobre-section .kicker{color:var(--accent-2)}
 .sobre-title{font-size:28px;margin:8px 0 12px;color:var(--accent-2);font-family:'Playfair Display', serif}
-.sobre-intro{color:var(--muted);max-width:700px;line-height:1.7;font-size:16px;margin-bottom:32px}
-.sobre-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
-.sobre-texto h3{font-size:22px;color:var(--accent-2);margin:0 0 14px}
-.sobre-texto p{line-height:1.7;color:#4a5568;margin-bottom:14px}
-.sobre-valores{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;grid-column:1 / -1}
+.sobre-intro{color:var(--accent-2);max-width:100%;line-height:1.7;font-size:16px;margin-bottom:32px;font-weight:500}
+.sobre-banner{
+	position:relative;
+	background-image:linear-gradient(to right, rgba(247,252,245,0.96) 0%, rgba(247,252,245,0.88) 42%, rgba(247,252,245,0.3) 70%, rgba(247,252,245,0.05) 100%), url('assets/ft1.jpeg');
+	background-size:cover;
+	background-position:right top;
+	background-repeat:no-repeat;
+	border-radius:18px;
+	padding:48px 40px;
+	min-height:430px;
+	display:flex;
+	align-items:center;
+	margin-bottom:32px;
+	box-shadow:0 10px 30px rgba(15,23,20,0.06);
+	border:1px solid rgba(47,79,58,0.08);
+}
+.sobre-banner-content{max-width:540px;position:relative;z-index:2}
+.sobre-banner-content h3{font-size:28px;color:var(--accent-2);margin:0 0 16px;font-family:'Playfair Display', serif}
+.sobre-banner-content p{line-height:1.75;color:#2d3748;margin-bottom:14px;font-size:16px}
+.sobre-banner-content p:last-child{margin-bottom:0}
+
+.sobre-valores{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .sobre-card{background:var(--card);padding:28px 22px;border-radius:14px;box-shadow:0 8px 24px rgba(15,23,20,0.06);border-top:4px solid var(--accent-2);text-align:center;transition:transform 0.2s ease}
 .sobre-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(15,23,20,0.10)}
 .sobre-card-icon{font-size:32px;margin-bottom:12px}
@@ -117,7 +135,11 @@ body{
 .sobre-card p{margin:0;font-size:14px;color:var(--muted);line-height:1.6}
 
 @media (max-width:900px){
-	.sobre-grid{grid-template-columns:1fr}
+	.sobre-banner{
+		padding:32px 20px;
+		background-image:linear-gradient(180deg, rgba(247,252,245,0.96) 0%, rgba(247,252,245,0.92) 100%), url('assets/ft1.jpeg');
+		min-height:auto;
+	}
 	.sobre-valores{grid-template-columns:1fr}
 }
 
