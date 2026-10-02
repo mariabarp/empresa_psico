@@ -196,7 +196,8 @@ body{
 
 /* Seção AS PSICÓLOGAS */
 .team-section{padding:28px 0}
-.team-title{font-size:22px;margin:8px 0 20px;color:var(--accent-2)}
+.team-intro{color:var(--accent-2);max-width:100%;line-height:1.7;font-size:16px;margin:4px 0 24px;font-weight:500}
+.team-title{font-size:22px;margin:0 0 24px;color:var(--accent-2)}
 .team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;align-items:start;justify-items:center}
 .team-member{text-align:center;max-width:360px}
 .avatar-wrap{position:relative;display:inline-block;margin:0 auto 14px}
